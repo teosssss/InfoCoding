@@ -17,7 +17,7 @@ def is_istantaneous(source_alphabet, code_scheme):
     Space complexity: O(1) no auxiliary space needed
     """
     # Convert the code scheme to a set of codewords
-    C = list(code_scheme.values())
+    C = list(set(code_scheme.values()))
     
     # Check for each element if it's a prefix of other elements
     for i,el1 in enumerate(C):
