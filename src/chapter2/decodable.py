@@ -55,7 +55,7 @@ def is_uniquely_decodable(source_alphabet, code_scheme):
         # exit condition 1: looking if a word of L_n is in C
         for el in L_n:
             if el in C:
-                break
+                return False
 
         # exit condition 2 : check if L_n is equal to another previous set 
         if L_n in L_history:
